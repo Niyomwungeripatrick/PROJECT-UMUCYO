@@ -1,0 +1,24 @@
+body{
+    background: rgba(0, 149, 255, 0.179);
+}
+.navbar-brand{
+    font-size: 30px;
+}
+span{
+    color: rgb(1, 136, 255);
+}
+/* .nav-link{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 500ms;
+}
+.nav-link:hover{
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 2px solid rgb(1, 136, 255);
+    background: rgba(0, 149, 255, 0.179);
+    font-size: 20px;
+    transition: 500ms;
+} */
+.card-body{
+    box-shadow: 1px 1px 10px rgb(0, 36, 59);
+    border-radius: 10px;
+}
