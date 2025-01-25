@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umucyo School Login</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+  <style>
+    /* Styling for the hero section */
+    .hero-section {
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .hero-content {
+      background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+      padding: 20px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<div class="hero-section" id="hero-section">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Welcome to Umucyo School</h1>
+      <p>Your journey to excellence starts here.</p>
+      <a href="login.html" class="btn btn-primary mt-3">Login</a>
+      <a href="register.html" class="btn btn-outline-light mt-3">Register</a>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript to handle background image rotation -->
+<script>
+  // Array of image URLs for the hero background
+  const images = [
+    'url("../images/capture.png")', 
+    'url("../")', 
+    'url("image3.jpg")'
+  ];
+  
+  let currentIndex = 0;
+  const heroSection = document.getElementById('hero-section');
+  
+  // Function to change background image every 10 seconds
+  function changeBackground() {
+    currentIndex = (currentIndex + 1) % images.length;
+    heroSection.style.backgroundImage = images[currentIndex];
+  }
+  
+  // Initial image load
+  heroSection.style.backgroundImage = images[currentIndex];
+  
+  // Set interval for changing background
+  setInterval(changeBackground, 10000); // 10000ms = 10s
+</script>
+
+</body>
+</html>
